@@ -1,0 +1,115 @@
+.Clients-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: right;
+  /* background: url('../images/hero.jpeg') center center/cover no-repeat; */
+  /* background: #932432; */
+  background: #fff;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.Clients{
+  display: flex;
+  justify-content: space-around;
+  width: 70vw;
+  padding: 80px 0;
+}
+
+.Clients img{
+  height: 100px;
+  width: 100px;
+  background: 
+  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='30' height='30'  fill='lightpink'>  <path d='M6 22 L5.84 22 C30 32 36 36 54 60 C56 62 57 62 56 58 C48 34 46 28 27.16 11.17 C10 0 0 17.83 6 22.17 Z' /></svg>") 65px 10px/30px 30px no-repeat,
+  radial-gradient(circle at center, lightgray 20%,transparent 50%),
+  radial-gradient(circle at center,#007CC7  5%,lightgray 50%,#007CC7 95%);
+  position: relative;
+  box-shadow:0 0 1px black;
+  filter: brightness(110%);
+  padding: 3px;
+}
+
+.Clients img:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border: 6px solid white;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.Clients img:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: 
+   linear-gradient(#fff, #fff) left/6px 100% no-repeat, 
+   linear-gradient(#fff, #fff) bottom/100% 6px no-repeat;
+  top: 22px;
+  left: 29px;
+}
+
+.test {
+  text-align: center;
+  font-size: 36px;
+  color: #007CC7;
+}
+
+.Clients-Section p {
+  width: 50vw;
+  color: #007CC7;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 760px) {
+  .Clients-Section p {
+      padding: 0;
+      width: 80vw;
+  }
+
+  .test {
+      border-right: 0;
+  }
+
+  .Clients-Text p {
+      overflow-y: auto;
+      text-align: center;
+  }
+
+  .Clients-Text {
+      /* text-align: center; */
+      width: 90%;
+  }
+
+  .Clients-Section {
+      flex-direction: column;
+      padding: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Clients-Section p {
+      padding: 10%;
+      width: 80vw;
+  }
+  
+  .Clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Clients-Section p {
+      /* padding: 0; */
+      width: 80vw;
+  }
+}
